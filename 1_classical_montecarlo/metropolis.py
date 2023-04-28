@@ -101,7 +101,7 @@ if __name__ == "__main__":
             mean_E2 = np.mean(Es**2)
 
             # WHAT IS THIS? # TODO
-            # variance^2 / (LT)^2 ?
+            # variance^2 / (LT)^2 ? specific heat? why variance instead of just the mean_E2?
             C_list_bin.append(1. / T**2. / L**2. * (mean_E2 - mean_E**2))
         
         # average the results from N_bins times of running for statistical reason
