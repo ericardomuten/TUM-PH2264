@@ -28,11 +28,6 @@ def init_system(Lx, Ly):
             m2 = xy_to_n(x, (y+1) % Ly)
             bonds.append([n, m1])
             bonds.append([n, m2])
-            
-            # uncomment this part for triangular lattice
-            # m3 = xy_to_n((x+1)% Lx, (y+1) % Ly)
-            # bonds.append([n, m3])
-
     bonds = np.array(bonds)
     spins = np.random.randint(0, 2, size=(N,))*2 - 1
     return spins, bonds, N
